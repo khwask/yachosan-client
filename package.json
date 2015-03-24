@@ -1,0 +1,22 @@
+{
+  "name": "yachosan-angular",
+  "version": "1.0.0",
+  "description": "yachosan client",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/kawasakimsh/yachosan-client.git"
+  },
+  "license": "ISC",
+  "devDependencies": {
+    "angular": "1.4.0-beta.6",
+    "angular-new-router": "0.5.0",
+    "http-server": "0.8.0"
+  },
+  "scripts": {
+    "start": "http-server -a localhost -p 8000 -c-1"
+  }
+}
