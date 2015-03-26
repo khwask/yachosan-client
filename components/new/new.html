@@ -1,5 +1,7 @@
 <h2>スケジュール作成</h2>
-<form>
-  イベント名　：<input type="text">
-  イベント内容：<input type="text">
+<form novalidate>
+  イベント名：<input type="text" ng-model="new.schedule.scheduleName"><br>
+  イベント内容：<input type="text" ng-model="new.schedule.scheduleDescription"><br>
+  候補日：<input type="text" ng-model="new.schedule.proposedDates" ng-list><br>
+  <input type="button" ng-click="new.create(new.schedule)" value="イベント作成">
 </form>

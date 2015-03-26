@@ -1,10 +1,14 @@
-angular.module('app', ['app.home', 'ngNewRouter'])
+angular.module('app', [
+    'ngNewRouter',
+    'app.new',
+    'app.detail',
+    'app.services'])
   .controller('AppController', ['$router', AppController]);
 
 function AppController ($router) {
   $router.config([
-    { path: '/',       redirectTo: '/home' },
-    { path: '/home',   component:  'home'  },
-    { path: '/new',    component:  'new'   }
+    { path: '/',            redirectTo: '/new'   },
+    { path: '/new',         component:  'new'    },
+    { path: '/detail/:id',  component:  'detail' }
   ]);
 }

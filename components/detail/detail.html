@@ -1,0 +1,7 @@
+<h2>detail</h2>
+スケジュール名：{{detail.schedule.scheduleName}}<br>
+スケジュール詳細：{{detail.schedule.scheduleDescription}}<br>
+<h3>候補日</h3>
+<ul>
+    <li ng-repeat="proposedDate in detail.schedule.proposedDates">{{proposedDate}}</li>
+</ul>
